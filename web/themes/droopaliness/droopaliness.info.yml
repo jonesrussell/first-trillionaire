@@ -1,0 +1,23 @@
+name: droopaliness
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - droopaliness/base
+  - droopaliness/messages
+  - core/normalize
+  - tailwindcss/base
+libraries-extend:
+  user/drupal.user:
+    - droopaliness/user
+  core/drupal.dropbutton:
+    - droopaliness/dropbutton
+  core/drupal.dialog:
+    - droopaliness/dialog
+  file/drupal.file:
+    - droopaliness/file
+  core/drupal.progress:
+    - droopaliness/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.0.3'
