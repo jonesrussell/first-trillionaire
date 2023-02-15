@@ -571,6 +571,10 @@ video {
   display: inline;
 }
 
+.flex {
+  display: flex;
+}
+
 .table {
   display: table;
 }
@@ -585,6 +589,23 @@ video {
 
 .hidden {
   display: none;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .text-2xl {
