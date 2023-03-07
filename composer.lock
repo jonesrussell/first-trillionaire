@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e91c6a7a16e6a33b1d48520e432a8a2c",
+    "content-hash": "e7e7a0f729be2a3883e764fc2476a3b7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1416,6 +1416,55 @@
                 "source": "https://github.com/drupal/core-recommended/tree/10.0.3"
             },
             "time": "2023-02-01T18:23:27+00:00"
+        },
+        {
+            "name": "drupal/poll",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/poll.git",
+                "reference": "d22ef91e4c4d2e4cff4521f20ef03d88e7fc7679"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5+3-dev",
+                    "datestamp": "1660169235",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "adammalone",
+                    "homepage": "https://www.drupal.org/user/1295980"
+                },
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "mqanneh",
+                    "homepage": "https://www.drupal.org/user/2833163"
+                }
+            ],
+            "description": "Allows your site to capture votes on different topics in the form of multiple choice questions.",
+            "homepage": "https://www.drupal.org/project/poll",
+            "support": {
+                "source": "https://git.drupalcode.org/project/poll"
+            }
         },
         {
             "name": "drush/drush",
@@ -5839,7 +5888,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/poll": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
