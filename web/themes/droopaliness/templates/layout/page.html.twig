@@ -44,7 +44,7 @@
 #}
 <div class="layout-container">
 
-  <header role="banner" class="border-black border">
+  <header role="banner" class="container mx-auto">
     {{ page.header }}
   </header>
 
@@ -57,29 +57,30 @@
 
   {{ page.help }}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+  <main role="main" class="bg-zinc-800">
+    <div class="container mx-auto">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="hero">
-      {{ page.hero }}
-    </div>{# /.hero #}
+      <div class="hero">
+        {{ page.hero }}
+      </div>{# /.hero #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
+      <div class="layout-content">
+        {{ page.content }}
+      </div>{# /.layout-content #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
+      {% if page.sidebar_first %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+    </div>
   </main>
 
   {% if page.footer %}
