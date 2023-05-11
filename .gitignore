@@ -44,4 +44,6 @@ web/sites/simpletest
 .ddev/
 .idea/
 
-/web/modules/contrib
+web/modules/contrib/
+
+web/sites/default/files/
